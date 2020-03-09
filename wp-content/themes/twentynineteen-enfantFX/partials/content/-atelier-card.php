@@ -9,8 +9,6 @@ $result = substr($excerpt, 0, strrpos($excerpt, ' '));
 
 echo'
 
-    <li class="titreAtelier">'.get_the_title().'</li>
+    <li class="titreAtelier">'.$inc.get_the_title().'</li>
 
 ';
-//<span>'.$post->post_name.'</span>
-//    <span>'.get_the_author().'</span>
