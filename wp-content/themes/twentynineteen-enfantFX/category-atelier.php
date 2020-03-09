@@ -37,5 +37,5 @@ if($query1->have_posts()){
             </section>';
 }
 
-
+get_footer();
 ?>
