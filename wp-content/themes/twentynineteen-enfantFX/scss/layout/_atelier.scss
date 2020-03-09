@@ -13,4 +13,9 @@
   grid-template-rows:repeat(11 ,1fr);
   grid-gap:10px 10px;
   margin:auto;
+
+  .atelier{
+    text-align:center;
+    border:1px solid black;
+  }
 }

@@ -248,6 +248,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   grid-gap: 10px 10px;
   margin: auto;
 }
+.atelier-grid .atelier {
+  text-align: center;
+  border: 1px solid black;
+}
 
 h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
   background: none;
