@@ -1,14 +1,16 @@
 <?php
 
-// below text excerpt operations taken from https://developer.wordpress.org/reference/functions/get_the_excerpt/#comment-3320
-$excerpt = get_the_excerpt();
-$excerpt = substr($excerpt, 0, 25);
-$result = substr($excerpt, 0, strrpos($excerpt, ' '));
+$progHeure=get_post_field('post_name');
+$progHeure=substr($progHeure, strrpos($progHeure,'-')+1);
+$gridCol=get_the_author_meta( 'ID', $post->post_author )-1;
+$gridRow=$progHeure-7;
 
 
-
-echo'
-
-    <li class="titreAtelier">'.$inc.get_the_title().'</li>
-
-';
+echo "<div class=\"atelier\" style='grid-column: ".$gridCol."/span 1;grid-row:".$gridRow."/ span 2;'>
+            
+            <div class=\"atelier-info\">
+                <h5>".get_the_title()."</h5>
+                <p class=\"atelier-heure\">".get_post_field('post_name')."</p>
+                <p class='atelier-author'>".get_the_author_meta( 'display_name', $post->post_author )."</p>
+            </div>
+        </div>";

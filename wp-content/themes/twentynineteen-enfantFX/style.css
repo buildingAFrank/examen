@@ -231,6 +231,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   margin-top: 10px;
 }
 
+.ateliers-title {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.atelier-grid {
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px grey;
+  width: 90%;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-gap: 10px 10px;
+  margin: auto;
+}
+
 h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
   background: none;
   content: "";
